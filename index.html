@@ -7,6 +7,8 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <link rel="" href="/package-lock.json">
+
+
 </head>
 
 <body>
@@ -40,30 +42,44 @@
     </div>
 
 
+    <!---favicon=======- - -->
+    <link rel="shortcut icon" href="/image/IMG_6134.jpeg">
+    <!----poppins-font-familt-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
 
 
     <!---portfolio section----->
-    <h2>projects</h2>
-    <div class="row">
-        <div class="column" style="background-color:#fff;">
-            <img src="/image/IMG_6134.jpeg" alt="Avatar" style="width:80px">
-            <img src="/image/IMG_6137.jpeg" alt="Avatar" style="width:80px">
-            <br><a href="https://apps.apple.com/us/app/com-plushstudio-ios1/id1595386305" class="btn">view</a>
+    <section id="project">
 
 
-
-
+        <!---heading----->
+        <div class="project-heading">
+            <span>Let's see my work</span>
+            <h3>my projects</h3>
         </div>
-        <div class="row">
-            <div class="column" style="background-color:#fff;">
-                <img src="/image/nails 2.png" alt="Avatar" style="width:40%">
-                <img src="/image/Screen Shot 2021-06-13 at 6.04.14 PM.png" alt="Avatar" style="width:40%">
+        <!---filter----->
+        <ul class="project-filter">
+            <li class="list project-filter-active" data-filter="all">All</li>
+            <li class="list" data-filter="app"></li>Application</li>
+            <li class="list" data-filter="design"></li>App Design</li>
+            <li class="list" data-filter="web"></li>Website Design</li>
+            <li class="list" data-filter="aI"></li>AI</li>
+        </ul>
+        <!---container----->
+        <div class="project-container">
 
-
-            </div>
+            <!---box-1----->
+            <a href="" class="project-box">
+                <img src="/image/IMG_6135.jpeg" alt="work" style="width:20%">
+            </a>
+            <!---box-2----->
+            <a href="" class="project-box">
+                <img src="/image/Screen Shot 2021-06-13 at 6.04.14 PM.png" alt="work" style="width:40%">
+            </a>
         </div>
-    </div>
-
+    </section>
 
 
     <!---about me ----->
@@ -72,6 +88,7 @@
         <p>Some text about who we are and what we do.</p>
         <p>Resize the browser window to see that this page is responsive by the way.</p>
     </div>
+
     <!---contact me ----->
 
     <div class="container">
@@ -113,6 +130,14 @@
     </div>
 
 </body>
+
+<!----jquery-->
+
+<script type="text/javascript">
+    $(document).on('click', ' .project-filter 1i', function () {
+        $(this).addclass('project-filter-active').siblings().removeClass('project-filter-active')
+    });
+</script>
 
 </html>
 
