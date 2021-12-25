@@ -379,8 +379,8 @@ h2 {
 }
 
 .wrapper .static-txt {
-
-
+  padding-bottom: 10px;
+    padding-top: 10px;
     color: #fff;
     font-size: 60px;
     font-weight: 400;
