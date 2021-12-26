@@ -130,7 +130,6 @@ body {
             width: 100%;
             align-items: center;
             flex-wrap: 30px 0 10px;
-            display: none;
         }
 
         .menu-icon img {
