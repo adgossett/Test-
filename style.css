@@ -358,12 +358,17 @@ body {
         resize: vertical;
     }
 
-    input[type=submit] {
+  input[type=submit] {
         background-color: #FC6D6D;
         color: white;
         padding: 12px 20px;
         cursor: pointer;
-        border: none;
+        background: transition 0.5s;
+        margin-left: 10px;
+        font-weight: 600;
+        padding: 5px;
+        align-items: center;
+
     }
 
 
