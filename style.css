@@ -400,7 +400,7 @@ body {
 
         .column,
         input[type=submit] {
-            width: 100%;
+            width: 150%;
             margin-top: 0;
         }
     }
