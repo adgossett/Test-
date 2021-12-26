@@ -410,7 +410,7 @@ body {
     }
     
     .footer {
-        display: inline-block;
+        position: fixed;
         left: 0;
         bottom: 0;
         width: 100%;
